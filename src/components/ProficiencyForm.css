@@ -1,0 +1,41 @@
+.proficiency-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+}
+
+.levels-container {
+    display: flex;
+    gap: 20px;
+}
+
+.level-column {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    width: 25%;
+}
+
+.level-column h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skill-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.skill-item:hover {
+    background-color: #444;
+}
+
+.skill-item.selected {
+    background-color: #28a745;
+    color: #fff;
+}

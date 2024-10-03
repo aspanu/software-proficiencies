@@ -1,0 +1,28 @@
+.display-page {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.selected-skills-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.selected-skills-list li {
+    margin: 10px 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chart-container {
+    width: 60%;
+    margin: 20px auto;
+    height: 300px;
+}
+
+.qr-code-container {
+    margin-top: 20px;
+}
