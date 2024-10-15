@@ -1,41 +1,68 @@
 .proficiency-form {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--form-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .levels-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
 .level-column {
-    background-color: #333;
+    background-color: var(--level-column-bg-color);
     padding: 15px;
     border-radius: 8px;
-    width: 25%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .level-column h3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #28a745;
 }
 
 .skill-item {
-    padding: 10px;
-    margin-bottom: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .skill-item:hover {
     background-color: #444;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .skill-item.selected {
     background-color: #28a745;
     color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional Styling */
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }

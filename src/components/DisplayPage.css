@@ -1,6 +1,7 @@
 .display-page {
     text-align: center;
-    color: #f0f0f0;
+    color: var(--text-color);
+    padding: 2rem;
 }
 
 .selected-skills-list {
@@ -8,21 +9,35 @@
     padding: 0;
     font-size: 1.1rem;
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
 
 .selected-skills-list li {
-    margin: 10px 0;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 10px;
+    background-color: var(--list-item-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.selected-skills-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .chart-container {
-    width: 60%;
+    width: 80%;
     margin: 20px auto;
-    height: 300px;
+    height: 400px;
 }
 
 .qr-code-container {
     margin-top: 20px;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }

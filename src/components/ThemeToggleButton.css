@@ -1,0 +1,36 @@
+/* Light/Dark Mode Toggle */
+
+:root {
+    --text-color: #1e1e1e;
+    --card-bg-color: #ffffff;
+    --form-bg-color: #f9f9f9;
+    --level-column-bg-color: #f0f0f0;
+    --list-item-bg-color: #e0e0e0;
+}
+
+body.dark-mode {
+    --text-color: #f0f0f0;
+    --card-bg-color: #1e1e1e;
+    --form-bg-color: #2c2c2c;
+    --level-column-bg-color: #333;
+    --list-item-bg-color: #444;
+}
+
+/* Light/Dark Mode Button */
+.toggle-mode-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-mode-button:hover {
+    background-color: #218838;
+}
