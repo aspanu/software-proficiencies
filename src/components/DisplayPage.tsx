@@ -13,6 +13,7 @@ import {
     Tooltip,
     Legend,
 } from 'chart.js';
+import RadarChart from './RadarChart';
 
 
 // Register Chart.js components
@@ -149,6 +150,10 @@ const DisplayPage: React.FC = () => {
                             }}
                         />
                     </div>
+                    <div className="radar-chart-container">
+                        <RadarChart proficiencyLevels={proficiencyLevels} />
+                    </div>
+
                     <div className="qr-code-container" style={{ marginTop: '20px' }}>
                         <h3>Share Your Skills Summary</h3>
                         <p>Scan this code to view your skills summary or share it with others.</p>
