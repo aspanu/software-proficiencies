@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './ProficiencyForm.css'; // We'll add a CSS file for styling.
 import { VERSION, proficiencyLevels, ProficiencyLevel } from '../skills';
 import { useNavigate } from 'react-router-dom';

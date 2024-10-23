@@ -151,7 +151,7 @@ const DisplayPage: React.FC = () => {
                         />
                     </div>
                     <div className="radar-chart-container">
-                        <RadarChart proficiencyLevels={proficiencyLevels} />
+                        <RadarChart selectedSkillsByLevel={selectedSkills} chartSize={300} />
                     </div>
 
                     <div className="qr-code-container" style={{ marginTop: '20px' }}>
