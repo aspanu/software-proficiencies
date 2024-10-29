@@ -92,12 +92,12 @@ const RadarChart: React.FC<RadarChartProps> = ({ selectedSkillsByLevel, chartSiz
 
     const categories = [
         'Server Fundamentals',
-        'Web Development Practices',
+        'WebDev Practices',
         'Security',
-        'Database Design & Management',
-        'API Design & Integration',
-        'Cloud & Infrastructure',
-        'Team Leadership & Architecture',
+        'DB Design',
+        'API Design',
+        'Infra & Cloud',
+        'Leadership',
     ];
 
     // Count selected skills per category
